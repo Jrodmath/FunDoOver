@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotepadForm", "NotepadForm\NotepadForm.csproj", "{D84819C0-9819-478D-BC30-67105D367902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotepadForm", "NotepadForm\NotepadForm.csproj", "{D84819C0-9819-478D-BC30-67105D367902}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotepadClasses", "NotepadClasses\NotepadClasses.csproj", "{B71FDBEB-48F4-4C8E-BFF8-0CF3F88A109D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotepadClasses", "NotepadClasses\NotepadClasses.csproj", "{B71FDBEB-48F4-4C8E-BFF8-0CF3F88A109D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciTests", "FibonacciTests\FibonacciTests.csproj", "{E61BFE20-9A76-4964-B9AB-2FF9B7065146}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B71FDBEB-48F4-4C8E-BFF8-0CF3F88A109D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B71FDBEB-48F4-4C8E-BFF8-0CF3F88A109D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B71FDBEB-48F4-4C8E-BFF8-0CF3F88A109D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E61BFE20-9A76-4964-B9AB-2FF9B7065146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61BFE20-9A76-4964-B9AB-2FF9B7065146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61BFE20-9A76-4964-B9AB-2FF9B7065146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61BFE20-9A76-4964-B9AB-2FF9B7065146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

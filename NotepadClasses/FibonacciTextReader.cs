@@ -7,10 +7,13 @@ namespace NotepadClasses
     public class FibonacciTextReader : System.IO.TextReader
     {
         //Fields
+        //x: The first Fibonacci number.
         BigInteger x = 0;
+        //y: The second Fibonacci number.
         BigInteger y = 0;
+        //sum: The rolling sum of x and y.
         BigInteger sum = 0;
-        int takeNumber = 0;
+        //maxLines: The number of Fibonacci numbers that should be printed
         int maxLines = 0;
 
         //Properties
@@ -18,14 +21,26 @@ namespace NotepadClasses
         public BigInteger X { get { return x; } }
         public BigInteger Y { get { return y; } }
         public BigInteger Sum { get { return sum; } }
-        public int TakeNumber { get; set; }
 
         public int MaxLines { get; set; }
 
         //Constructors
-
+      
+        /// <summary>
+        /// The driving constructor for FibonacciTextReader objects. 
+        /// This constructor accepts an integer argument
+        /// and sets MaxLines equal to that integer.
+        /// </summary>
+        /// <param name="n">
+        /// n is an integer number, and it should be greater than zero.
+        /// </param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// Throw an argument exception if zero or a negative value is entered.
+        /// </exception>
         public FibonacciTextReader(int n)
         {
+            if(n <= 0)
+                throw new ArgumentOutOfRangeException("n must be positive");
             this.MaxLines = n;
         }
 
