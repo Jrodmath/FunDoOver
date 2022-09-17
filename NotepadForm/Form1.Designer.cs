@@ -44,6 +44,7 @@
             this.textBox1.Location = new System.Drawing.Point(0, 28);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(800, 422);
             this.textBox1.TabIndex = 0;
             // 
@@ -95,6 +96,7 @@
             this.saveFileToolStripMenuItem1.Name = "saveFileToolStripMenuItem1";
             this.saveFileToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.saveFileToolStripMenuItem1.Text = "Save file...";
+            this.saveFileToolStripMenuItem1.Click += new System.EventHandler(this.saveFileToolStripMenuItem1_Click);
             // 
             // Form1
             // 

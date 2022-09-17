@@ -1,6 +1,7 @@
 using NotepadClasses;
 using System.IO;
 using System.Text;
+using System.Windows.Forms.Design;
 
 namespace NotepadForm
 {
@@ -60,6 +61,24 @@ namespace NotepadForm
         {
             FibonacciTextReader fibo50 = new FibonacciTextReader(100);
             GenericLoadText(fibo50);
+        }
+
+        private void saveFileToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using Stream s = File.Open(saveFileDialog.FileName, FileMode.CreateNew);
+                using StreamWriter sw = new StreamWriter(s);
+                {
+                    sw.Write(textBox1.Text);
+                }
+
+            }
+
+
+
+
         }
     }
 }

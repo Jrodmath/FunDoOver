@@ -45,7 +45,7 @@ namespace NotepadClasses
         public override string ReadToEnd()
         {
             string? text = null;
-            int count = 0;
+            int count = 1;
             x = 0;
             y = 1;
             StringBuilder sb = new();
@@ -57,7 +57,7 @@ namespace NotepadClasses
             count++;
             MaxLines -= 2;
 
-            while (MaxLines >= 0)
+            while (MaxLines > 0)
             {
                 sb.Append(count.ToString() + ": ");
 
