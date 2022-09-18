@@ -19,7 +19,7 @@ namespace NotepadForm
 
         private void GenericLoadText(TextReader readFile)
         {
-            if (readFile == TextReader.Null)
+            /*if (readFile == TextReader.Null)
             {
                 throw new FileNotFoundException();
             }
@@ -29,7 +29,9 @@ namespace NotepadForm
                 textBox1.Clear();
             }
 
-            string s = readFile.ReadToEnd().ToString();
+            string s = readFile.ReadToEnd().ToString();*/
+            GenericLoadTextClass myLoader = new GenericLoadTextClass();
+            string s = myLoader.GenericLoadTextOther(readFile);
 
             textBox1.Text = s;
         }
@@ -73,7 +75,6 @@ namespace NotepadForm
                 {
                     sw.Write(textBox1.Text);
                 }
-
             }
         }
     }

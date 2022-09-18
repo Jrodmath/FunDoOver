@@ -24,8 +24,15 @@ namespace NotepadClasses
 
         public int MaxLines { get; set; }
 
+        //Default constructor to set x and y to zero.
+        public FibonacciTextReader()
+        {
+            this.y = BigInteger.Zero;
+            this.x = BigInteger.Zero;
+        }
+
         //Constructors
-      
+
         /// <summary>
         /// The driving constructor for FibonacciTextReader objects. 
         /// This constructor accepts an integer argument
@@ -39,9 +46,17 @@ namespace NotepadClasses
         /// </exception>
         public FibonacciTextReader(int n)
         {
-            if(n <= 0)
+            try
+            {
+                if(n > 0)
+                {
+                    this.MaxLines = n;
+                }
+            }
+            catch (Exception e)
+            {
                 throw new ArgumentOutOfRangeException("n must be positive");
-            this.MaxLines = n;
+            }  
         }
 
         public override string ReadLine()
